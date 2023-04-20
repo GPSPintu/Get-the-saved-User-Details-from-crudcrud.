@@ -1,0 +1,10 @@
+crudcrud is a third-party backend service that provides a simple way to create a RESTful API for a database without needing to set up a server or write any backend code. It allows developers to easily perform CRUD (Create, Read, Update, Delete) operations on their data using HTTP requests.
+
+To access user details that have been stored in crudcrud, you will need to use the API endpoint that was created when the data was added. This API endpoint can be used to make HTTP requests to retrieve or modify the data.
+
+javascript
+
+fetch('https://crudcrud.com/api/your-api-endpoint')
+  .then(response => response.json())
+  .then(data => console.log(data))
+  .catch(error => console.error(error))
